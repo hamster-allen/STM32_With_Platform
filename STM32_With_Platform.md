@@ -1,16 +1,20 @@
 # 如何使用Platform編寫STM32
 
+<br>
+
 #### Platform創建專案
 
 
 ![Platform創建專案](https://github.com/hamster-allen/STM32_With_Platform/blob/master/STM32_With_Platform_picture/Platform%E5%89%B5%E5%BB%BA%E5%B0%88%E6%A1%88.png)
 
+<br>
 
 #### STM32CubeMX-選擇晶片
 
 
 ![MX_創建1](https://github.com/hamster-allen/STM32_With_Platform/blob/master/STM32_With_Platform_picture/MX_%E5%89%B5%E5%BB%BA1.png)
 
+<br>
 
 #### STM32CubeMX-創建路徑與IDE設定
 * 創建路徑與Platform專案相同
@@ -19,12 +23,14 @@
 
 ![MX_創建2](https://github.com/hamster-allen/STM32_With_Platform/blob/master/STM32_With_Platform_picture/MX_%E5%89%B5%E5%BB%BA2.png)
 
+<br>
 
 #### STM32CubeMX-程式生成設定
 
 
 ![MX_創建3](https://github.com/hamster-allen/STM32_With_Platform/blob/master/STM32_With_Platform_picture/MX_%E5%89%B5%E5%BB%BA3.png)
 
+<br>
 
 #### Platform-創建成功
 * lib -> 自訂函數庫資料夾
@@ -34,6 +40,7 @@
 
 ![MX_創建4](https://github.com/hamster-allen/STM32_With_Platform/blob/master/STM32_With_Platform_picture/MX_%E5%89%B5%E5%BB%BA4.png)
 
+<br>
 
 #### Platform-自訂函數庫資料夾格式
 
@@ -44,7 +51,8 @@
   * 其他函數資料夾
     * 頭文件
     * C文件
-   
+
+<br>
 
 #### Platform-將輸出的.bin檔轉換成.hex檔
 
@@ -59,6 +67,8 @@ env.AddPostAction(
       ]), "Building $BUILD_DIR/${PROGNAME}.hex")
 )
 ```
+
+<br>
 
 #### Platform-更改編譯配置
 
